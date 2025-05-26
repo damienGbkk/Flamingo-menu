@@ -3,28 +3,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flamingo Beach Club</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="Flamingo Beach Club Logo" class="logo" />
-    <h1>Welcome to Flamingo Beach Club</h1>
+    <img src="logo.png" alt="Flamingo Logo" class="logo"/>
+    <h1 id="title">Welcome to Flamingo Beach Club</h1>
+    <p id="location" class="tagline">Located on the sands of paradise</p>
+    <p id="hours">Open daily from 10:00 to 22:00</p>
+    <p id="features">Fire shows · DJ · Cocktails · Food</p>
+
     <div class="languages">
-      <span>🇬🇧</span>
-      <span>🇹🇭</span>
-      <span>🇷🇺</span>
-      <span>🇸🇦</span>
+      <button onclick="switchLang('en')">🇬🇧</button>
+      <button onclick="switchLang('th')">🇹🇭</button>
+      <button onclick="switchLang('ru')">🇷🇺</button>
+      <button onclick="switchLang('ar')">🇸🇦</button>
     </div>
+
     <div class="categories">
-      <button>Cocktails</button>
-      <button>Food</button>
-      <button>Wines & Beers</button>
-      <button>Softs & Mocktails</button>
-      <button>Special Events</button>
+      <a href="menu.html#cocktails">🍸 Cocktails</a>
+      <a href="menu.html#food">🍽️ Food</a>
+      <a href="menu.html#softs">🥤 Softs</a>
+      <a href="menu.html#wine">🍷 Wines & Beers</a>
+      <a href="menu.html#events">🔥 Special Events</a>
     </div>
-    <a href="menu.html" class="view-menu">📖 View Menu</a>
+
+    <a id="view-menu" class="view-menu" href="menu.html">📖 View Menu</a>
   </div>
+
+  <script src="lang.js"></script>
 </body>
 </html>
