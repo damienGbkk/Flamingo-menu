@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamingo Menu Categories</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fffaf5;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff69b4;
+      padding: 20px;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .category {
+      width: 180px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .category img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .category:hover img {
+      transform: scale(1.05);
+    }
+
+    .category-name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Explore Our Menu</h1>
+  <div class="categories">
+    <a class="category" href="#thai"><img src="img/thai.jpg" alt="Thai"><div class="category-name">Thai</div></a>
+    <a class="category" href="#pizza"><img src="img/pizza.jpg" alt="Pizza"><div class="category-name">Pizza</div></a>
+    <a class="category" href="#sushi"><img src="img/sushi.jpg" alt="Sushi"><div class="category-name">Sushi</div></a>
+    <a class="category" href="#cocktail"><img src="img/cocktail.jpg" alt="Cocktail"><div class="category-name">Cocktails</div></a>
+    <a class="category" href="#coffee"><img src="img/coffee.jpg" alt="Coffee"><div class="category-name">Coffee</div></a>
+    <a class="category" href="#soft"><img src="img/soft.jpg" alt="Soft"><div class="category-name">Soft Drinks</div></a>
+    <a class="category" href="#dessert"><img src="img/dessert.jpg" alt="Dessert"><div class="category-name">Desserts</div></a>
+  </div>
+</body>
+</html>
