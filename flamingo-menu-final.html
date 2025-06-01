@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flamingo Beach Club Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      color: #3a2c2a;
+    }
+
+    .logo {
+      padding-top: 20px;
+    }
+
+    .logo img {
+      width: 90px;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      color: #c7386b;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #5c3b36;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+      gap: 16px;
+    }
+
+    .category {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 18px;
+      width: 160px;
+      padding: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #3a2c2a;
+      transition: transform 0.2s;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+    }
+
+    .category img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .category-name {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo.png" alt="Flamingo Logo" />
+  </div>
+  <h1>Flamingo</h1>
+  <h2>Explore Our Menu</h2>
+
+  <div class="categories">
+    <a class="category" href="#thai"><img src="img/thai.jpg" alt="Thai"><div class="category-name">Thai</div></a>
+    <a class="category" href="#pizza"><img src="img/pizza.jpg" alt="Pizza"><div class="category-name">Pizza</div></a>
+    <a class="category" href="#sushi"><img src="img/sushi.jpg" alt="Sushi"><div class="category-name">Sushi</div></a>
+    <a class="category" href="#cocktail"><img src="img/cocktail.jpg" alt="Cocktail"><div class="category-name">Cocktails</div></a>
+    <a class="category" href="#coffee"><img src="img/coffee.jpg" alt="Coffee"><div class="category-name">Coffee</div></a>
+    <a class="category" href="#soft"><img src="img/soft.jpg" alt="Soft"><div class="category-name">Soft Drinks</div></a>
+    <a class="category" href="#dessert"><img src="img/dessert.jpg" alt="Dessert"><div class="category-name">Desserts</div></a>
+  </div>
+</body>
+</html>
