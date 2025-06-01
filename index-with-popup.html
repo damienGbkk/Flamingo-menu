@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flamingo Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Popup Styling */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .popup-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .popup-close {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: white;
+      color: black;
+      font-size: 24px;
+      padding: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      z-index: 1001;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Flamingo Beach Club</h1>
+  <p>Scan the QR code to view our full menu.</p>
+
+  <!-- Popup container -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">&times;</span>
+      <img src="event-popup.jpg" alt="Event Tonight at Flamingo" class="popup-image" />
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.getElementById("popup").style.display = "flex";
+    };
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
